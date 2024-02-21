@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey-Form</title>
+</head>
+<body>
+    <h1 id="title">Survey-Form</h1>
+    <p id="description">Pleasefill out this survey.</p>
+    <form action="" id="survey-form">
+        <label id="name-label" for="name">Name: <input id="name" type="text" name="name" placeholder="Please enter your name" required>
+        </label>
+        <label id="email-label" for="email">Email: <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+        </label>
+        <label id="number-label" for="number">Age:s <input type="number" name="number" id="number" min="13" max="120" placeholder="Age?">
+        </label>
+        <label for="dropdown">How did you hear about us?
+            <select name="dropdown" id="dropdown">
+                <option value="friend">Friend</option>
+                <option value="internet">Internet</option>
+            </select>
+        </label>
+        <legend>Would you recommend to a friend?</legend>
+        <label for="recommend"><input type="radio" name="recommend" checked>Yes</label>
+        <label for="recommend"><input type="radio" name="recommend">No</label>
+    </form>
+</body>
+</html>
