@@ -8,13 +8,13 @@
 </head>
 <body>
     <h1 id="title">Survey-Form</h1>
-    <p id="description">Pleasefill out this survey.</p>
+    <p id="description"><i>Pleasefill out this survey.</i></p>
     <form action="" id="survey-form">
-        <label id="name-label" for="name">Name: <input id="name" type="text" name="name" placeholder="Please enter your name" required>
+        <label id="name-label" for="name">Name <input id="name" type="text" name="name" placeholder="Please enter your name" required>
         </label>
-        <label id="email-label" for="email">Email: <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+        <label id="email-label" for="email">Email <input type="email" id="email" name="email" placeholder="Enter your email address" required>
         </label>
-        <label id="number-label" for="number">Age:s <input type="number" name="number" id="number" min="13" max="120" placeholder="Age?">
+        <label id="number-label" for="number">Age <input type="number" name="number" id="number" min="13" max="120" placeholder="Age?">
         </label>
         <label for="dropdown">How did you hear about us?
             <select name="dropdown" id="dropdown">
@@ -25,6 +25,10 @@
         <legend>Would you recommend to a friend?</legend>
         <label for="recommend"><input type="radio" name="recommend" checked>Yes</label>
         <label for="recommend"><input type="radio" name="recommend">No</label>
+        <label for="comments">Comments
+            <textarea name="comments" id="comments" cols="30" rows="3" placeholder="Comments..."></textarea>
+        </label>
+        <button id="submit" type="submit">Submit</button>
     </form>
 </body>
 </html>
